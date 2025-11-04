@@ -1,0 +1,119 @@
+/* Estilos para la tabla del calendario */
+#calendario table {
+    font-family: 'Avenir', 'Frutiger', 'Frutiger', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    background: #fcf4f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-top: 10px;
+}
+
+#calendario th {
+    background: #d34a24;
+    color: #ee7958;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 1.1em;
+}
+
+#calendario td {
+    padding: 10px;
+    border: 1px solid #e2d1d1;
+    color: #333;
+    font-size: 1em;
+}
+
+#calendario td[Calend] {
+    background: #e93706 !important; /* Color para festivos */
+    color: #d34a24;
+    font-weight: bold;
+    border: 2px solid #d34a24;
+}
+/* ESTILOS GENERALES
+  Esto aplica a toda la página*/
+
+body {
+    font-family: Avenir, Frutiger; /* Tipo de letra */
+    background-color: #fff4cd; /* Color de fondo blanco claro */
+    color: #272525; /* Color de texto gris oscuro */
+    margin: 1; /* Elimina los márgenes predeterminados del cuerpo de la página */
+    padding: 5px; /* Añade un espacio alrededor del contenido */
+    line-height: 1.2; /* Espaciado entre líneas del texto */
+}
+
+/*  ESTILOS PARA EL ENCABEZADO Y SECCIONES
+  Aquí se da forma al título principal y las cajas de contenido */
+
+header {
+    text-align: center; /* Centra el texto del encabezado */
+    padding: 35px 0; /* Espaciado arriba y abajo */
+    background-color: #c53f1a; /* Fondo blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para que se vea como una caja flotante */
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ecdbd6; /* Color bordo para el título principal */
+}
+
+.informacion-proyecto, .login-container, #calendario-seccion {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*  ESTILOS PARA EL FORMULARIO DE INICIO DE SESIÓN */
+
+.login-container {
+    max-width: 400px; /* Ancho máximo para el formulario */
+    margin: 0 auto; /* Centra el formulario en la página */
+    text-align: center;
+}
+
+form label {
+    display: block; /* Cada etiqueta en una línea separada */
+    margin-top: 10px;
+    font-weight: bold; /* Texto en negrita */
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 90%; /* Ocupa casi todo el ancho */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #d34a24; /* Color de fondo del botón */
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Cambia el cursor a una manita al pasar por encima */
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #d34a24; /* Color más oscuro al pasar el mouse */
+}
+
+#error-message {
+    margin-top: 10px;
+}
+
+/*ESTILOS PARA LA SECCIÓN DEL CALENDARIO*/
+
+#calendario-seccion h2 {
+    color: #d34a24; /* Color bordo para el título del calendario */
+    text-align: center;
+}
+
+#calendario {
+    text-align: izquierda;
+    font-size: 1.2em;
+    padding: 15px;
+}

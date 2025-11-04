@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="esp"
+
+<head>
+    <meta charset="UTF-8">
+    <title>SAVI</title>
+    <link rel="stylesheet" href="script_web.css">
+    <script src="script_web.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>SAVI</h1>
+        <p>Sistema Analisis de Vidriera Interactiva</p>
+        <button id="toggle-faq" style="color: #d34a24; display: min-width;">Preguntas Frecuentes</button>
+    </header>
+
+<main>
+    <section id="faq-section" style="display: none;">
+        <h2>¿Qué es SAVI?</h2>
+        <p>SAVI, o "Sistema de Análisis de Vidriera Interactiva", es una herramienta tecnológica diseñada para revolucionar la manera en que los negocios presentan sus productos en el escaparate y, al mismo tiempo, recopilan información valiosa sobre la interacción de los clientes con la tienda.
+Este sistema funciona como un cerebro detrás de la vidriera, encargándose de recolectar todos los datos posibles del escaparate de un negocio.         <p> Sensores de movimiento y cámaras para analizar el flujo de personas que pasan frente a la tienda y cuántas se detienen a mirar.</p>
+
+<h2>¿Como lo hacemos?</h2>
+<p>Análisis de datos que traduce la información recolectada en estadísticas claras, como los productos más vistos, el tiempo que los clientes pasan frente a la vidriera y las horas de mayor afluencia</p>
+<p>Optimizar las estrategias de marketing al recolectar información de sistemas como SAVI, analizando los datos del comportamiento de los clientes frente a las vidrieras.</p>
+
+    <h2>¿Cómo ayuda a la empresa?</h2>
+        <p>Toma de decisiones informada: Al recolectar datos sobre el comportamiento de los clientes, como la cantidad de personas que se detienen frente a la vidriera y los productos que más les interesan, SAVI proporciona información valiosa</p>
+        <p>Innovación en la presentación: El sistema transforma la vidriera de un espacio estático a una experiencia interactiva. Esto no solo llama la atención de los clientes, sino que también crea una conexión más moderna y atractiva con la marca</p>
+        <p>Optimización del marketing: Los datos que SAVI recolecta son un recurso de marketing fundamental. La empresa puede usar esta información para optimizar sus campañas publicitarias y asegurarse de que sus esfuerzos de marketing estén alineados con lo que realmente atrae a sus clientes</p>
+    </section>
+    
+    <section class="login-container" id="login-section">
+        <h2>Ingresa a tu cuenta</h2>
+        <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Ingresar</button>
+        </form>
+        <p id="error-message" style="color: rgb(228, 11, 11); display: none;">Usuario o contraseña incorrectos.</p>
+    </section>
+
+    <section id="calendario-seccion" style="display: none;">
+        <h2>Próximos Días Festivos</h2>
+        <div id="calendario"></div>
+        <div class="otra-seccion">
+          
+        <h2>Datos recolectados de la camara</h2>
+        <p>En este apartado se pueden visualizar los datos recolectados no solo de la camara sino los datos de interacción, estos te van a permitir saber no solo la cantidad de personas que circulan por tu escaparate, sino tambien las preferencias:</p>
+
+    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3096243/widgets/1144665"></iframe>
+    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3096243/widgets/1144686"></iframe>
+    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3096243/widgets/1144689"></iframe>
+   
+    
+<h2>Guarde los datos recolectados</h2>
+<button id="descargar-datos-btn">Descargar datos recolectados</button>
+ <h2>Datos de contacto</h2>
+        <p>Si tiene alguna duda o consulta sobre el proyecto no dude en contactarse con, Tel:2804555555</p>
+</section>     
+
+        </div>
+    </section>
+</main>
