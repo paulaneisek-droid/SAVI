@@ -46,11 +46,40 @@ Este sistema funciona como un cerebro detrás de la vidriera, encargándose de r
     </section>
 
     <section id="calendario-seccion" style="display: none;">
-        <h2>Próximos Días Festivos</h2>
+        <h2>Datos recolectados de la camara</h2>
+        <p>En este apartado se pueden ver los datos recolectados no solo de la camara sino los datos de interacción, estos te van a permitir saber no solo la cantidad de personas que circulan por tu escaparate, sino tambien las preferencias:</p>
+
+    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3096243/widgets/1144665"></iframe>
+    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3096243/widgets/1144686"></iframe>
+    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3096243/widgets/1144689"></iframe>
+   
+    
+       
+       <!-- <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3096243/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&xaxis=Tiempo"></iframe>-->
+    
+    <div class="contenedor-centrado">
+    <h2>Cantidad de personas que pasaron por el escaparate</h2>
+    
+    <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
+            src="https://thingspeak.com/channels/3096243/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&xaxis=Tiempo">
+    </iframe>
+</div>
+
+<h2>Guarde los datos recolectados</h2>
+<p>A continuación se puede descargar la información que esta recolectada para que usted lo pueda tener a su alcance, por el momento se encuentra en formato de texto, pero el proyecto siempre se esta actualizando</p>
+<!---<button id="descargar-datos-btn" style="color: #000000"; text-align="center"; display: min-width;>Descargar datos recolectados</button>--->
+<div class="centrar-contenedor">
+    <button id="descargar-datos-btn" style="color: #000000; width: 300px; height: 60px;">  Descargar datos recolectados
+</button>
+
+</div>
+
+<!---<h2>Próximos Días Festivos</h2>-->
         <div id="calendario"></div>
+        <!---<p id="nombre-del-mes"></p>--->
         <div class="otra-seccion">
           
-        <h2>Datos recolectados de la camara</h2>
+        <!----<h2>Datos recolectados de la camara</h2>
         <p>En este apartado se pueden visualizar los datos recolectados no solo de la camara sino los datos de interacción, estos te van a permitir saber no solo la cantidad de personas que circulan por tu escaparate, sino tambien las preferencias:</p>
 
     <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3096243/widgets/1144665"></iframe>
@@ -58,8 +87,8 @@ Este sistema funciona como un cerebro detrás de la vidriera, encargándose de r
     <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3096243/widgets/1144689"></iframe>
    
     
-<h2>Guarde los datos recolectados</h2>
-<button id="descargar-datos-btn">Descargar datos recolectados</button>
+<--<h2>Guarde los datos recolectados</h2>-->
+<!----<button id="descargar-datos-btn">Descargar datos recolectados</button>--->
  <h2>Datos de contacto</h2>
         <p>Si tiene alguna duda o consulta sobre el proyecto no dude en contactarse con, Tel:2804555555</p>
 </section>     
