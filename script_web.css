@@ -95,6 +95,7 @@ form button {
     border-radius: 4px;
     cursor: pointer; /* Cambia el cursor a una manita al pasar por encima */
     margin-top: 20px;
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 form button:hover {
@@ -117,3 +118,31 @@ form button:hover {
     font-size: 1.2em;
     padding: 15px;
 }
+
+    /* Estilos Base del Botón (Descargar datos recolectados) */
+    #descargar-datos-btn {
+        /* Colores */
+        background-color: #c93a12; /* Fondo azul */
+        color: #ffffff; /* Texto blanco */
+        
+        /* Apariencia y tamaño */
+        border: none;
+        padding: 15px 30px; /* Agrandar el botón con relleno */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer;
+        
+        /* Transición suave para el efecto hover */
+        transition: background-color 0.3s ease;
+    }
+
+    /* Estilo para el Efecto Hover */
+    #descargar-datos-btn:hover {
+        /* Fondo más oscuro al pasar el ratón */
+        background-color: #f04a1c; 
+    }
+    
+    /* Estilo para centrar horizontalmente el contenedor */
+    .centrar-contenedor {
+        /* Centra elementos en línea (como el botón) horizontalmente */
+        text-align: center;
+    }
