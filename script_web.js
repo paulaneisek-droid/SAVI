@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // se define los usuarios y contraseñas
     const usuariosPermitidos = {
-        "usuario1": "contraseña123"
+        "usuario1": "123"
     };
 
     // Función para mostrar el calendario y el próximo festivo
@@ -163,10 +163,19 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Agrega la tabla del calendario al div 
         calendarioDiv.appendChild(tabla);
+
+        //_________________________NUUEVO___________________________
+        // 1. Obtener la fecha actual
+const fechaActual = new Date();
+
+// 2. Formatear la fecha para obtener solo el nombre largo del mes
+const nombreMes = fechaActual.toLocaleDateString('es-ES', { month: 'long' });
+
+// 3. Escribir el nombre del mes en el HTML
+document.getElementById('nombre-del-mes').textContent = nombreMes;
     } 
 
-
-    //:::::::::::::::::::::::::::::::ESTO DE ACA ABAJO ES NUEVO BUENO:::::::::::::::::::::::::::::: 
+//:::::::::::::::::::::::::::::::ESTO DE ACA ABAJO ES NUEVO BUENO:::::::::::::::::::::::::::::: 
     // ... (Dentro de document.addEventListener('DOMContentLoaded', ...) ) ...
 
 const descargarBtn = document.getElementById('descargar-datos-btn');
